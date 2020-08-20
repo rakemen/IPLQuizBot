@@ -16,7 +16,7 @@ answers = []
 question_asked = 0
 highscore_dict = {}
 question_answered = []
-bot = Bot('854613379:AAEq8EJn8L0wmJtDAO4JkuORDiwasou7G08')
+bot = Bot('thebotkey:thebotkey')
 LIST_OF_ADMINS = [495256027]
 current_question_id = 0
 timer = 15
@@ -156,7 +156,7 @@ def error(update, context):
 
 def main():
     
-	updater = Updater("854613379:AAEq8EJn8L0wmJtDAO4JkuORDiwasou7G08", use_context=True)
+	updater = Updater("thebotkey:thebotkey", use_context=True)
 	dp = updater.dispatcher
 	conv_handler = ConversationHandler(entry_points=[CommandHandler('start', start)],
 		states={
